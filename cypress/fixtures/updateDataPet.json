@@ -1,0 +1,10 @@
+{
+    "petId" : 20,
+    "categoryId" : 3,
+    "categoryName" : "cat",
+    "petName" : "Branco",
+    "photoUrls" : ["new photo"],
+    "tagsId" : 4,
+    "tagsName" : "cat",
+    "statusPet" : "available"
+}

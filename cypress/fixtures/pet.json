@@ -1,0 +1,11 @@
+{
+    "petId" : 10,
+    "status" : "sold",
+    "categoryId" : 3,
+    "categoryName" : "cat",
+    "petName" : "Neguinho",
+    "photoUrls" : ["String"],
+    "tagsId" : 4,
+    "tagsName" : "cat",
+    "statusPet" : "available"
+}

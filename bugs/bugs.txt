@@ -1,0 +1,28 @@
+Report: 17/02/2023 (19:10 horas) - Acessado via Chrome - Versão 109.0.5414.120 (Compilação oficial) (64 bits)
+
+Título da questão:
+Vulnerabilidade: ao alterar quantidade de um produto adicionado ao carrinho.
+
+Severidade/Criticidade: S4/P4 -> A questão é mais usual de UI, portanto, não afeta o fluxo de compras e seleção de quantidade.
+
+Escopo do bug: Questão não se trata de um bug, mas sim de sugestão de melhoria quanto a quantidade máxima de produtos adicionados
+ao carrinho.
+
+Descrição: Ao adicionar um produto no carrinho, o mesmo permite um máximo de 30 ou 40 unidades de um produto por meio de combobox,
+dependendo do seu tipo, no teste realizado foi adicionado um livro, e 30 unidades do mesmo, posteriormente foi adicionado o mesmo ao carrinho de compras.
+Já no carrinho, alterando a quantidade para menos de 10, o mesmo voltar a exibir o combobox, ao escolher a opção 10+, o mesmo abre uma 
+caixa de texto, porém a quantidade exibida é a ultima setada no combobox, para digitação, a quantidade máxima permitida é 999, visto que o campo
+tem limitação de 3 caracteres.
+
+Capturas de tela ou vídeos: Foram adicionados imagens e vídeo na pasta bug.
+
+Passos para reprodução: Acessar o site https://www.amazon.com.br/ -> digitar na pesquisa 'Latim em pó: Um passeio pela formação do nosso português'
+-> selecionar a quantidade de 30 -> clicar em adicionar ao carrinho -> clicar em Ir para o carrinho -> Já no carrinho, alterar a quantidade para 2
+para que o combobox volte a ser exibido -> clicar no combobox e selecionar a opção 10+ -> constatar que a quantidade na caixa de teste permanece sendo 2 
+-> alterar a quantidade para 999, limite máximo -> clicar no botão inspecionar e checar que a caixa de texto possui limite máximo de 3 caracteres.
+
+Sugestão de melhoria: Duas possibilidades,
+1ª -> Limitar a quantidade máxima em 30 unidades a cada pedido, visto que ao adicionar o produto na tela 
+incial o combobox permite inserção de ate 30 produtos.
+2º -> Exibir mensagem de alerta caso o cliente digite um número maior que 30, informando ao cliente quanto ao limite máximo, também pode ser exibda outra mesagem informando que para quantidades acima de 10,
+o mesmo deve selecionar a opção 10+ e digitar o valor desejado, pensando no lado de usabilidade do cliente.
